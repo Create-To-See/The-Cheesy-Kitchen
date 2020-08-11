@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+legend{
+text-align:center;
+}
+fieldset{
+    margin-top: 0px;
+width:80%;
+margin:auto;
+}
+#pay
+{
+margin-left:40%;
+background-color:white;
+font-weight:bold;
+font-size: 25px;
+width:25%;
+border-radius: 5%;
+border:0px;
+background-color:orange;
+color:green;
+}
+#pay:hover{
+background-color:green;
+color:orange;
+}
+input:hover
+{
+border-color:yellow;
+}
+tr:hover
+{
+background-color:lightblue;
+}
+table
+{
+border-collapse:collapse;
+}
+</style>
+<script>
+function exd()
+{
+var z=document.getElementById("ed").value;
+var sub=parseInt(z.substring(0,2));
+if((z.length<5 || z.length>5 || z.includes("/")==false || sub>12 || alpha(z)) && z.length!=0)
+{
+alert("EXPIRY DATE NOT IN GIVEN FORMAT !!!");
+return false;
+}
+else
+return true;
+}
+function cvv()
+{
+var w=document.getElementById("cv").value;
+if((w.length<3 || w.length>3) && w.length!=0)
+{
+alert("CVV IS INCORRECT !!!!");
+return false;
+}
+else
+return true;
+}
+function key()
+{
+var x=document.getElementById("cn").value;
+if(x.length==4 || x.length==9 || x.length==14 || x.length==19)
+{
+document.getElementById("cn").value=x+" ";
+}
+else
+document.getElementById("cn").value=x;
+}
+function edt()
+{
+var z=document.getElementById("ed").value;
+if(z.length==2)
+{
+document.getElementById("ed").value=z+"/";
+}
+else
+document.getElementById("ed").value=z;
+}
+function alpha(x)
+{
+if(x.includes("a")==true || x.includes("A")==true ||x.includes("b")==true ||x.includes("B")==true ||x.includes("c")==true ||x.includes("C")==true ||x.includes("d")==true ||x.includes("D")==true ||x.includes("e")==true ||x.includes("E")==true ||x.includes("f")==true ||x.includes("F")==true ||x.includes("g")==true ||x.includes("G")==true ||x.includes("h")==true ||x.includes("H")==true ||x.includes("i")==true ||x.includes("I")==true ||x.includes("j")==true ||x.includes("J")==true ||x.includes("k")==true ||x.includes("K")==true ||x.includes("l")==true ||x.includes("L")==true ||x.includes("M")==true ||x.includes("m")==true ||x.includes("n")==true ||x.includes("N")==true ||x.includes("o")==true ||x.includes("O")==true ||x.includes("p")==true ||x.includes("P")==true ||x.includes("q")==true ||x.includes("Q")==true ||x.includes("r")==true ||x.includes("R")==true ||x.includes("s")==true ||x.includes("S")==true ||x.includes("t")==true ||x.includes("T")==true ||x.includes("u")==true ||x.includes("U")==true ||x.includes("v")==true ||x.includes("V")==true ||x.includes("w")==true ||x.includes("W")==true ||x.includes("x")==true ||x.includes("X")==true ||x.includes("y")==true ||x.includes("Y")==true ||x.includes("z")==true ||x.includes("Z")==true ||x.includes("@")==true ||x.includes("#")==true ||x.includes("!")==true ||x.includes("$")==true ||x.includes("%")==true ||x.includes("^")==true ||x.includes("&")==true ||x.includes("*")==true ||x.includes("(")==true ||x.includes(")")==true ||x.includes("+")==true ||x.includes("-")==true ||x.includes("{")==true ||x.includes("}")==true ||x.includes("~")==true ||x.includes(">")==true ||x.includes("<")==true ||x.includes("?")==true)
+return true;
+else
+return false;
+}
+function cano()
+{
+var x=document.getElementById("cn").value;
+if((x.length<20 || x.length>20 || alpha(x)) && x.length!=0)
+{
+alert("CARD NUMBER IS INCORRECT !!");
+return false;
+}
+else
+{
+return true;
+}
+}
+
+function valid()
+{
+var x=document.getElementById("cn").value;
+var w=document.getElementById("cv").value;
+var z=document.getElementById("ed").value;
+var n=document.getElementById("nm").value;
+var flag=0;
+var rbs=document.querySelectorAll('input[name="pay"]');
+for(var rb of rbs)
+{
+if(rb.checked)
+{
+flag=1;
+if(rb.value=="deb")
+{
+if(x.length!=0 && w.length!=0 && z.length!=0 && n.length!=0)
+{
+if(cano()==true)
+{
+if(exd()==true)
+{
+if(cvv()==true)
+{
+if(confir('CARD')==true)
+return true;
+else
+return false;
+}
+else
+return false;
+}
+else
+return false;
+}
+else
+return false;
+}
+else
+{
+alert("PLEASE FILL ALL THE DETAILS !");
+return false;
+}
+}
+else if(rb.value=="paytm")
+{
+if(confir('PAYTM')==true)
+return true;
+else
+return false;
+}
+else if(rb.value=="upi")
+{
+if(confir('UPI')==true)
+return true;
+else
+return false;
+}
+else if(rb.value=="cash")
+{
+if(confir('CASH')==true)
+return true;
+else
+return false;
+}
+}
+else
+flag=0;
+}
+if(flag==0)
+{
+alert("PLEASE SELECT ANY METHOD ...");
+return false;
+}
+}
+
+function confir(p){
+var x=confirm("DO YOU WANT TO PLACE ORDER THROUGH "+p+" ?");
+if(x)
+return true;
+else
+return false;
+}
+</script>
+
+</head>
+<body>
+<form action="frame2.html" onsubmit="return valid()">
+<fieldset>
+<legend><h1 style="color:crimson;">PAYMENTS GATEWAY</h1></legend>
+<!--h3>* PAYMENT METHODS</h3-->
+<img src="https://www.logotaglines.com/wp-content/uploads/2016/08/Paytm-Logo-1200x1200.jpg" width=80 height=50/>
+<table>
+<tr><td style="width:86%;"><input type="radio" name="pay" value="paytm"/>PAYTM</td><td><img src="https://www.searchpng.com/wp-content/uploads/2018/11/Paytm_wallet.png"width=50 height=40/></td></tr>
+</table>
+<h3 >Online Payments</h3>
+<table>
+<tr><td style="width:86%;"><input type="radio" name="pay" value="deb"/>CREDIT/DEBIT</td><td><img src="https://icon-library.com/images/debit-card-icon/debit-card-icon-17.jpg"width=50 height=40/></td></tr>
+</table>
+<table>
+<tr><td><input type="text" id="nm" placeholder="Name on card" style="width:200%" maxlength=30"/></td></tr>
+<tr><td><input type="text" id="cn" placeholder="Card number" style="width:200%" onkeyup="key();" onblur="cano();" maxlength=19/></td></tr>
+<tr><td><input type="text" id="ed" placeholder="Expiry Date (MM/YY)" maxlength=5 onkeyup="edt();" onblur="exd();"/></td><td><input type="number" id="cv" style="width:99%" placeholder="CVV" onblur="cvv();"/></td></tr>
+</table>
+<h3>UPI</h3>
+<table>
+<tr><td style="width:79%;"><input type="radio" name="pay" value="upi"/>GOOGLE PAY</td><td><img src="https://thumbs.dreamstime.com/t/google-pay-logo-white-background-vector-format-available-google-pay-logo-136960347.jpg"width=80 height=50/></td></tr>
+</table>
+<h3>CASH</h3>
+<table>
+<tr><td style="width:79%;"><input type="radio" name="pay" value="cash"/>CASH ON DELIVERY</td><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpJ9g5rc-BHmgJJlGQMVJTrQ9RZdEOnIsDjA&usqp=CAU"width=80 height=50/></td></tr>
+</table>
+</fieldset><br>
+<input  id="pay" type="submit" value="Place Order"/>
+</form>
+</body>
+</html>
