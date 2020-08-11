@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function hello(){
+                parent.main.location.href='italian-mid.html';
+                parent.left.location.href='italian-left.html';
+                parent.upper.location.href='italian-top.html';
+                parent.right.location.href='italian-right.html';
+            }
+        </script>
+        <style>
+*{
+margin:0px;
+}
+.boss{
+    background-color:rgb(235, 225, 180);
+    width:98%;
+    height:370px;
+    margin:2px;
+    overflow: hidden;
+    
+}            
+h2{
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}            
+#b1
+{
+width:62%;
+height:40%;
+background-position: center;
+background-size:cover;
+background-repeat: no-repeat;
+margin-left: 18%;
+background-image:url("https://fondue.bg/wp-content/uploads/2019/09/italiancuisine.jpg");
+border-radius:15%;
+border-color:black;
+position:absolute;
+cursor: pointer;
+box-shadow: 5px 8px #979494;
+}
+#b1:hover{
+border-color:red;
+transition-duration: 0.3s;
+}  
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 12px;
+  margin-left:2px;
+  width:372px;
+  font-size: 25px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 54px;
+  z-index: 1;
+}
+
+.dropup-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content p:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+h3{
+    font-size:20px;
+    margin-left:14px;
+    margin-bottom: 25px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="boss">
+            <h2>* Want To Taste Some Italian *<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp Cuisines &nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*</h2>
+            <h3>Experience True Taste of Italy Near You</h3>
+        <button onclick="hello()" id="b1"></button>
+        </div>
+       
+        <div class="dropup">
+            <button class="dropbtn">Menu</button>
+            <div class="dropup-content">
+              <p onclick="parent.main.location.href='chinese-mid.html#SPECIAL'">Special's</p>
+              <p onclick="parent.main.location.href='chinese-mid.html#MOMOS'">Momos</p>
+              <p onclick="parent.main.location.href='chinese-mid.html#NOODLES'">Noodle's</p>
+              <p onclick="parent.main.location.href='chinese-mid.html#MANCHURIAN'">Manchurian</p>
+              <p onclick="parent.main.location.href='chinese-mid.html#COCKTAIL'">Cocktail's</p>
+            </div>
+        </div>
+    </body>
+</html>
