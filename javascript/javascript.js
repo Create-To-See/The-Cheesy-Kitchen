@@ -5,7 +5,7 @@ function myFunction() {
     alert('Please Fill the Name');
     }
     else
-    location.replace("restaurant.html");
+    location.replace("../Restaurant html/restaurant.html");
     }
    function getdata() {
       document.getElementById("naam").innerHTML=name;
