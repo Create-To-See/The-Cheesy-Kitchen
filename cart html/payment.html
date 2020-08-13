@@ -2,11 +2,14 @@
 <html>
 <head>
 <style>
+    body{
+        background-color:beige;
+    }
 legend{
 text-align:center;
 }
 fieldset{
-    margin-top: 0px;
+margin-top: 0px;
 width:80%;
 margin:auto;
 }
@@ -186,14 +189,14 @@ return true;
 else
 return false;
 }
+
 </script>
 
 </head>
 <body>
-<form action="frame2.html" onsubmit="return valid()">
+<form action="../Thanks/frame2.html" target="_parent" onsubmit="return valid()">
 <fieldset>
 <legend><h1 style="color:crimson;">PAYMENTS GATEWAY</h1></legend>
-<!--h3>* PAYMENT METHODS</h3-->
 <img src="https://www.logotaglines.com/wp-content/uploads/2016/08/Paytm-Logo-1200x1200.jpg" width=80 height=50/>
 <table>
 <tr><td style="width:86%;"><input type="radio" name="pay" value="paytm"/>PAYTM</td><td><img src="https://www.searchpng.com/wp-content/uploads/2018/11/Paytm_wallet.png"width=50 height=40/></td></tr>
@@ -216,7 +219,7 @@ return false;
 <tr><td style="width:79%;"><input type="radio" name="pay" value="cash"/>CASH ON DELIVERY</td><td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpJ9g5rc-BHmgJJlGQMVJTrQ9RZdEOnIsDjA&usqp=CAU"width=80 height=50/></td></tr>
 </table>
 </fieldset><br>
-<input  id="pay" type="submit" value="Place Order"/>
+<input id="pay" type="submit" value="Place Order"/>
 </form>
 </body>
 </html>
