@@ -2,8 +2,11 @@
 <html>
 <head>
 <title>Restaurant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../javascript/javascript.js"></script>
-<style>
+
+<!--Style Part-->
+<style>  
 *{
 margin:0px;
 }
@@ -28,27 +31,31 @@ h1:hover,h2:hover,h3:hover{
 color:antiquewhite;
 }
 h1{
-padding-top:30px;
-margin:0px 0px 30px 0px;   
+margin:0px 0px 30px 220px;   
 }  
 h2{
-margin:00px 0px 30px 0px;        
+margin:0px 0px 30px 0px;        
 } 
 h3{
-padding-bottom: 30px;
+padding-bottom: 20px;
 font-size:400%;
 } 
-#nam{
-    position:absolute;
-    margin-left: 1240px;
-    font-size:32px;
-    color:white;
+#namelog{
+    float: right;
+    margin:10px 10px 0px 0px;
 }
 #naam{
-    position:absolute;
-    margin-left: 1380px;
     font-size:32px;
     color:bisque;
+}
+#logout{
+color:white;
+background-color:black;
+float:right;
+margin-top: 5px;
+}
+#logout:hover{
+color:orange;
 }
 #middle{
 display: flex;
@@ -58,14 +65,18 @@ background-color: antiquewhite;
 width:10%;
 height:400px;      
 }
-#down-arrow{
+#down-arrow,#down-arrow2{
 width:96%;
 height:80px;
 margin-left: 2%;
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
 animation: mover 2s infinite alternate;
 }
 #waiter{
-animation: rover 3s infinite;        
+animation: rover 3s infinite;   
+height:88%;     
 }    
 
 .animation{
@@ -106,10 +117,13 @@ margin-top: 0.5%;
 width:18%;
 height:30%;
 border-radius:20%;
-background-image:url("https://fondue.bg/wp-content/uploads/2019/09/italiancuisine.jpg");
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKaEYQxmWVNtC5TQJGyZCmYhO3TjiR52D1zA&usqp=CAU");
 border-color:black;
 position:absolute;
 cursor: pointer;
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
 box-shadow: 5px 8px #b29b9b;
 }
 #b1:hover{
@@ -119,16 +133,19 @@ height:29.8%;
 transition-duration: 0.15s;    
 }
 #link2{
-margin-left:47%;
+margin-left:48%;
 margin-top: 0.5%;  
 }    
 #b2
 {
 width:18%;
 height:30%;
-background-image:url("https://www.takeaway.com/foodwiki/uploads/sites/11/2019/08/chinese_cuisine_3-1-540x360.jpg");
+background-image:url("https://jeremyfulep.com/wp-content/uploads/2019/05/http-www.dreams.metroeve.comchinese-food.WuyK7dMvyRs-21ts4ae-1024x350.jpeg");
 border-radius:20%;
 border-color:black;
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
 position:absolute;
 cursor: pointer;
 
@@ -140,24 +157,7 @@ width:17.9%;
 height:29.8%;    
 transition-duration: 0.15s;
 }      
-#labels{
-width:100%;
-background-color: antiquewhite;
-}
-label
-{
-font-weight:bold;
-font-size:28px;
-color:orange;
-}
-#italian{
-margin-top:272px; 
-margin-left:17%;     
-} 
-#chinese{
-margin-top:272px;
-margin-left:49.5%;         
-}     
+   
 @keyframes mover{
     0%{transform: translateY(0px);}
     100%{ transform: translateY(320px);}
@@ -176,8 +176,9 @@ margin-left:49.5%;
 }    
 
 </style>
+<!--Style Part-->
+<!--Script Part-->
 <script>
-function change(){
 var img =[
     "https://www.jessicagavin.com/wp-content/uploads/2018/01/chow-mein-1200.jpg",
     "https://i.ytimg.com/vi/xkMbJCtaaqA/maxresdefault.jpg",
@@ -185,40 +186,79 @@ var img =[
     "https://images.herzindagi.info/image/2019/Jun/momo-recipe-main.jpg",
     "https://www.seriouseats.com/recipes/images/2015/07/20150702-sous-vide-hamburger-anova-primary-1500x1125.jpg"
 ];
+var img1 =[
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaiphFSZzV4AVh1ZkFExqnXOj6Dx3zZZ5qYQ&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTr37ueBYahwtAE8qyRJ3bRBmZ9iT6uEE5ElQ&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQX856nf2Q5Nl6dfsjmmU9s3aw1H8zR1uVig&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOqJkMsB7V-wy2sbASpvAiipvq26r-xKiedA&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDH0o2o18n6XXCgngZtvM3t3Lrr67-VdRGgQ&usqp=CAU"
+];
+var img2 =[
+"https://www.jessicagavin.com/wp-content/uploads/2018/01/chow-mein-1200.jpg",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSp7h7-AsfreTKUpoQpqlYYAZRIliSQ84cvqg&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7GXnX6HYZhWCraap25ult1A65vN40Oljkqg&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZ-YOU-evTjscvmcV3plKtGIr-NRDkDnGKaQ&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhe1eNqYBFxouN7rJT3ZwDwXWiDAlGnqsNJg&usqp=CAU"
+]
 var i=0;
-function back()
+var j=0;
+var z=0;
+function leftchange()
+{
+document.getElementById("down-arrow").style.backgroundImage='url('+img1[j]+')';
+j++;
+if(j==5)
+j=0;
+setTimeout(leftchange,2000);
+}
+function rightchange()
+{
+document.getElementById("down-arrow2").style.backgroundImage='url('+img2[j]+')';
+z++;
+if(z==5)
+z=0;
+setTimeout(rightchange,2000);
+}
+function change()
 {
 document.getElementById("ani").style.backgroundImage='url('+img[i]+')';
 i++;
 if(i==5)
 i=0;
-setTimeout(back,2000);
+setTimeout(change,2000);
 }
-setTimeout(back,1000);
+function log(){
+    if(confirm("DO YOU REALLY WANT TO LOG OUT ?")==true)
+    location.replace("../login html/Login.html");
 }
 </script>
-    
+<!--Script Part-->
 </head>
-<body onload="getdata(),change()">    
+<!--Html Part-->
+<body onload="getdata(),change(),leftchange(),rightchange()">   
+
 <div class="welcome">
 <img id="logo" src="../images/ss.jpg"> 
-<h3 id="nam">Welcome</h3>
-<h3 id="naam">Foodies</h3>
+<div id="namelog">
+<p id="naam">Welcome &nbsp Food Lover </p>
+<input type="button" onclick="log();" value="LOGOUT" id="logout">
+</div>
+<div style="padding-top: 30px;">
 <h1>Welcome to</h1>
 <h2>The Cheesy Kitchen</h2>
 <h3>Lets Order Something...</h3>
-
 </div>
-    
+</div>
+
 <div style="width:100%;height:10px;background-color:antiquewhite;"></div> 
 
 <div id="middle">   
 <div class="left">
-<img id="down-arrow" src="../images/pizza.jpg">
+<div id="down-arrow"></div>
 </div>    
 <div class="animation" id="ani"></div>
 <div class="right">
-<img id="down-arrow" src="https://i.ytimg.com/vi/xkMbJCtaaqA/maxresdefault.jpg">
+<div id="down-arrow2"></div>
 </div> 
 </div>  
 
@@ -229,9 +269,7 @@ setTimeout(back,1000);
 <a id="link2" href="../chinese html/chinese-frame.html"><button id="b2"></button></a>
 <img id="left-arrow" src="../images/left arrow.png">
 </div>
-<div id="labels">
-<label id="italian">ITALIAN</label>
-<label id="chinese">CHINESE</label>
-</div>
+
 </body>
+<!--Html Part-->
 </html>
