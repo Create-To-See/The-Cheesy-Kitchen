@@ -44,100 +44,116 @@ img{
 border:1px solid black;
 box-shadow: 5px 6px gray;    
 }
+#lin{
+    width:735px;
+    height:1px;
+    background-color:rgb(128, 128, 128,0.4);
+}
 </style>
 </head>
 <body>
     <a name="SPECIAL">    
 <h2>SPECIAL'S</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/7d9/aaa0126383432548ffa6f202a17307d9.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"/></td>
     <td><br>VEG HAKKA NOODLES<br><ul type="square"><li>150/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub12()"><label class="b">-</label></button> <button ><label id="label12">ADD</label></button> <button onclick="add12()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub12()"><label class="b">-</label></button> <button ><label id="label12">ADD</label></button> <button id="vhn" value="VEG%20HAKKA%20NOODLES%20150" onclick="add12(150)"><label class="b"> +</label></button></td>
     </tr>
 <tr>
     <td><img src="https://res.cloudinary.com/purnesh/image/upload/f_auto/v1535630911/header-and-chicken-tandoori-momos-in-chilli-garlic-sauce.jpg"/></td>
     <td><br>TANDOORI MOMOS<br><ul type="square"><li>100/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub13()"><label class="b">-</label></button> <button ><label id="label13">ADD</label></button> <button onclick="add13()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub13()"><label class="b">-</label></button> <button ><label id="label13">ADD</label></button> <button id="tm" value="TANDOORI%20MOMOS%20100" onclick="add13(100)"><label class="b"> +</label></button></td>
     </tr>
 <tr>
     <td><img src="https://southindianfoods.in/recipe_picture_enlarge/paneer-manchurian.jpg"/></td>
     <td><br>CHEESE MANCHURIAN<br><ul type="square"><li>140/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub14()"><label class="b">-</label></button> <button ><label id="label14">ADD</label></button> <button onclick="add14()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub14()"><label class="b">-</label></button> <button ><label id="label14">ADD</label></button> <button id="cmh" value="CHEESE%20MANCHURIAN%20140" onclick="add14(140)"><label class="b"> +</label></button></td>
     </tr>
 </table>
 <a name="MOMOS"></a>
 <h2>MOMO'S</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://4.imimg.com/data4/PJ/DM/IMOB-24882555/images-2-500x500.jpg"/></td>
     <td><br>CHEESE MOMOS<br><ul type="square"><li>50/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub15()"><label class="b">-</label></button> <button ><label id="label15">ADD</label></button> <button onclick="add15()"><label class="b"> +</label></button></td>
-    </tr>
+    <td><br><button onclick="sub15()"><label class="b">-</label></button> <button ><label id="label15">ADD</label></button> <button id="cmo" value="CHEESE%20MOMOS%2050" onclick="add15(50)"><label class="b"> +</label></button></td>
+</tr>
 <tr>
     <td><img src="https://www.awesomecuisine.com/wp-content/uploads/2018/09/veg_momos-1.jpg"/></td>
     <td><br>VEG MOMOS<br><ul type="square"><li>40/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub16()"><label class="b">-</label></button> <button ><label id="label16">ADD</label></button> <button onclick="add16()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub16()"><label class="b">-</label></button> <button ><label id="label16">ADD</label></button> <button id="vmo" value="VEG%20MOMOS%2040" onclick="add16(40)"><label class="b"> +</label></button></td>
     </tr>
 </table>
 <a name="NOODLES"></a>
 <h2>NOODLE'S</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2014/07/schezwan-noodles-1a-500x375.jpg"/></td>
     <td><br>SCHEZWAN NOODLES<br><ul type="square"><li>80/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub17()"><label class="b">-</label></button> <button ><label id="label17">ADD</label></button> <button onclick="add17()"><label class="b"> +</label></button></td>
-    </tr>
+    <td><br><button onclick="sub17()"><label class="b">-</label></button> <button ><label id="label17">ADD</label></button> <button id="sn" value="SCHEZWAN%20NOODLES%2080" onclick="add17(80)"><label class="b"> +</label></button></td>
+</tr>
 <tr>
     <td><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2016/05/veg-noodles-recipe-1.jpg"/></td>
     <td><br>VEG NOODLES<br><ul type="square"><li>60/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub18()"><label class="b">-</label></button> <button ><label id="label18">ADD</label></button> <button onclick="add18()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub18()"><label class="b">-</label></button> <button ><label id="label18">ADD</label></button> <button id="vnd" value="VEG%20NOODLES%2060" onclick="add18(60)"><label class="b"> +</label></button></td>
     </tr>
 </table>
 <a name="MANCHURIAN"></a>
 <h2>MANCHURIAN</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://i2.wp.com/vegecravings.com/wp-content/uploads/2017/03/veg-manchurian-dry-recipe-step-by-step-instructions-10.jpg?fit=2412%2C1944&quality=65&strip=all&ssl=1"/></td>
     <td><br>DRY MANCHURIAN<br><ul type="square"><li>80/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub19()"><label class="b">-</label></button> <button ><label id="label19">ADD</label></button> <button onclick="add19()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub19()"><label class="b">-</label></button> <button ><label id="label19">ADD</label></button> <button id="dm" value="DRY%20MANCHURIAN%2080" onclick="add19(80)"><label class="b"> +</label></button></td>
     </tr>
 <tr>
     <td><img src="https://i.ytimg.com/vi/2-uu7l3Qwuo/maxresdefault.jpg"/></td>
     <td><br>GRAVY MANCHURIAN<br><ul type="square"><li>80/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub20()"><label class="b">-</label></button> <button ><label id="label20">ADD</label></button> <button onclick="add20()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub20()"><label class="b">-</label></button> <button ><label id="label20">ADD</label></button> <button id="gm" value="GRAVY%20MANCHURIAN%2080" onclick="add20(80)"><label class="b"> +</label></button></td>
     </tr>
 </table>
 <a name="COCKTAIL"></a>
 <h2>COCKTAIL'S</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://thumbor.thedailymeal.com/8vk3o3ZWs4I832oc_aCXminbO0g=//https://www.thedailymeal.com/sites/default/files/recipe/2016/Virgin%20Mojito%20Recipe%20MAIN.jpg"/></td>
     <td><br>VIRGIN MOJITO<br><ul type="square"><li>60/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub21()"><label class="b">-</label></button> <button ><label id="label21">ADD</label></button> <button onclick="add21()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub21()"><label class="b">-</label></button> <button ><label id="label21">ADD</label></button> <button id="vmj" value="VIRGIN%20MOJITO%2060" onclick="add21(60)"><label class="b"> +</label></button></td>
     </tr>
 <tr>
     <td><img src="https://previews.123rf.com/images/johnkasawa/johnkasawa1306/johnkasawa130600065/20274047-blueberry-flavor-aerated-soft-drinks-whit-ice-in-glass-isolated-on-white-background.jpg"/></td>
     <td><br>COOL BLUE SODA<br><ul type="square"><li>60/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub22()"><label class="b">-</label></button> <button ><label id="label22">ADD</label></button> <button onclick="add22()"><label class="b"> +</label></button></td>
-    </tr>
+    <td><br><button onclick="sub22()"><label class="b">-</label></button> <button ><label id="label22">ADD</label></button> <button id="cbs" value="COOL%20BLUE%20SODA%2060" onclick="add22(60)"><label class="b"> +</label></button></td>
+</tr>
 <tr>
     <td><img src="https://2fdltvvn8wp2rn64ywgk8o17-wpengine.netdna-ssl.com/wp-content/uploads/2015/05/fruit-beer-with-apples.png"/></td>
     <td><br>FRUIT BEAR<br><ul type="square"><li>50/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub23()"><label class="b">-</label></button> <button ><label id="label23">ADD</label></button> <button onclick="add23()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub23()"><label class="b">-</label></button> <button ><label id="label23">ADD</label></button> <button id="fbr" value="FRUIT%20BEAR%2050" onclick="add23(50)"><label class="b"> +</label></button></td>
     </tr>
 </table>
+<div id="lin"></div><br>
+<form action="../get.html" method="get">
+<input type="hidden" name="sum" id="su"/>
+<input type="hidden" name="price" id="pr"/>
+<input type="submit" style="margin-left:40%; font-size: 16px;" value="ORDER DETAILS"/>
+</form>
 </body>
 </html>
