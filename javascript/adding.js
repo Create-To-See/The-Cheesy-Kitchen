@@ -8,8 +8,15 @@ var ct=new Array(24);
         for(var i=0;i<24;i++){
             ct[i]=0;
         }
-        
-        function add1(){
+var v="";
+var price=0;
+function con(x)
+{
+v=v+x+"<br>";
+document.getElementById("su").value=v;
+document.getElementById("pr").value=price;
+}
+        function add1(y){
     var label1=document.getElementById("label1").innerHTML;
     if(label1=='ADD'){
         label1=0;
@@ -19,6 +26,9 @@ var ct=new Array(24);
    //     document.getElementById("demo").innerHTML=ct[0];
         ct[1]++; //for count of first item
        document.getElementById("label1").innerHTML=label1; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("ps").value;
+con(x); 
 }
 function sub1(){
     var label1=document.getElementById("label1").innerHTML;
@@ -33,7 +43,7 @@ function sub1(){
     }
      document.getElementById("label1").innerHTML=label1;
 }}
-         function add2(){
+         function add2(y){
     var label2=document.getElementById("label2").innerHTML;
     if(label2=='ADD'){
         label2=0;
@@ -43,6 +53,9 @@ function sub1(){
  //   document.getElementById("demo").innerHTML=ct[0];
     ct[2]++;
        document.getElementById("label2").innerHTML=label2; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("bs").value;
+con(x); 
 }
 function sub2(){
     var label2=document.getElementById("label2").innerHTML;
@@ -56,7 +69,7 @@ function sub2(){
     }
      document.getElementById("label2").innerHTML=label2;
 }}
- function add3(){
+ function add3(y){
     var label3=document.getElementById("label3").innerHTML;
     if(label3=='ADD'){
         label3=0;
@@ -66,6 +79,9 @@ function sub2(){
  //   document.getElementById("demo").innerHTML=ct[0]; 
     ct[3]++;
        document.getElementById("label3").innerHTML=label3; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("cp").value;
+con(x); 
 }
 function sub3(){
     var label3=document.getElementById("label3").innerHTML;
@@ -79,7 +95,7 @@ function sub3(){
     }
      document.getElementById("label3").innerHTML=label3;
 }}
-     function add4(){
+     function add4(y){
     var label4=document.getElementById("label4").innerHTML;
     if(label4=='ADD'){
         label4=0;
@@ -89,6 +105,9 @@ function sub3(){
   //  document.getElementById("demo").innerHTML=ct[0];
          ct[4]++;
        document.getElementById("label4").innerHTML=label4; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("fp").value;
+con(x); 
 }
 function sub4(){
     var label4=document.getElementById("label4").innerHTML;
@@ -102,7 +121,7 @@ function sub4(){
     }
      document.getElementById("label4").innerHTML=label4;
 }}   
- function add5(){
+ function add5(y){
     var label5=document.getElementById("label5").innerHTML;
     if(label5=='ADD'){
         label5=0;
@@ -112,6 +131,10 @@ function sub4(){
  //   document.getElementById("demo").innerHTML=ct[0];
      ct[5]++;
        document.getElementById("label5").innerHTML=label5; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("vl").value;
+con(x); 
+
 }
 function sub5(){
     var label5=document.getElementById("label5").innerHTML;
@@ -125,7 +148,7 @@ function sub5(){
     }
      document.getElementById("label5").innerHTML=label5;
 }}
-     function add6(){
+     function add6(y){
     var label6=document.getElementById("label6").innerHTML;
     if(label6=='ADD'){
         label6=0;
@@ -135,6 +158,9 @@ function sub5(){
  //   document.getElementById("demo").innerHTML=ct[0];
             ct[6]++;
        document.getElementById("label6").innerHTML=label6; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("atb").value;
+con(x); 
 }
 function sub6(){
     var label6=document.getElementById("label6").innerHTML;
@@ -148,7 +174,7 @@ function sub6(){
     }
      document.getElementById("label6").innerHTML=label6;
 }} 
-         function add7(){
+         function add7(y){
     var label7=document.getElementById("label7").innerHTML;
     if(label7=='ADD'){
         label7=0;
@@ -158,6 +184,9 @@ function sub6(){
   //  document.getElementById("demo").innerHTML=ct[0];
                 ct[7]++;
        document.getElementById("label7").innerHTML=label7; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("mm").value;
+con(x); 
 }
 function sub7(){
     var label7=document.getElementById("label7").innerHTML;
@@ -171,7 +200,7 @@ function sub7(){
     }
      document.getElementById("label7").innerHTML=label7;
 }}
-         function add8(){
+         function add8(y){
     var label8=document.getElementById("label8").innerHTML;
     if(label8=='ADD'){
         label8=0;
@@ -181,6 +210,9 @@ function sub7(){
  //   document.getElementById("demo").innerHTML=ct[0];
                 ct[8]++;
        document.getElementById("label8").innerHTML=label8; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("rsp").value;
+con(x); 
 }
 function sub8(){
     var label8=document.getElementById("label8").innerHTML;
@@ -194,7 +226,7 @@ function sub8(){
     }
      document.getElementById("label8").innerHTML=label8;
 }}
-         function add9(){
+         function add9(y){
     var label9=document.getElementById("label9").innerHTML;
     if(label9=='ADD'){
         label9=0;
@@ -204,6 +236,9 @@ function sub8(){
  //   document.getElementById("demo").innerHTML=ct[0];
                 ct[9]++;
        document.getElementById("label9").innerHTML=label9; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("wsp").value;
+con(x); 
 }
 function sub9(){
     var label9=document.getElementById("label9").innerHTML;
@@ -217,7 +252,7 @@ function sub9(){
     }
      document.getElementById("label9").innerHTML=label9;
 }}
-         function add10(){
+         function add10(y){
     var label10=document.getElementById("label10").innerHTML;
     if(label10=='ADD'){
         label10=0;
@@ -227,6 +262,9 @@ function sub9(){
   //  document.getElementById("demo").innerHTML=ct[0];
                 ct[10]++;
        document.getElementById("label10").innerHTML=label10; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("os").value;
+con(x); 
 }
 function sub10(){
     var label10=document.getElementById("label10").innerHTML;
@@ -240,7 +278,7 @@ function sub10(){
     }
      document.getElementById("label10").innerHTML=label10;
 }}
-         function add11(){
+         function add11(y){
     var label11=document.getElementById("label11").innerHTML;
     if(label11=='ADD'){
         label11=0;
@@ -250,6 +288,9 @@ function sub10(){
   //  document.getElementById("demo").innerHTML=ct[0];
                 ct[11]++;
        document.getElementById("label11").innerHTML=label11; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("kks").value;
+con(x); 
 }
 function sub11(){
     var label11=document.getElementById("label11").innerHTML;
@@ -263,13 +304,16 @@ function sub11(){
     }
      document.getElementById("label11").innerHTML=label11;
 }}
-function add12(){
+function add12(y){
     var label12=document.getElementById("label12").innerHTML;
     if(label12=='ADD'){
         label12=0;
     }
     label12++;
        document.getElementById("label12").innerHTML=label12; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("vhn").value;
+con(x); 
 }
 function sub12(){
     var label12=document.getElementById("label12").innerHTML;
@@ -282,13 +326,16 @@ function sub12(){
      document.getElementById("label12").innerHTML=label12;
 }}
    
- function add13(){
+ function add13(y){
     var label13=document.getElementById("label13").innerHTML;
     if(label13=='ADD'){
         label13=0;
     }
     label13++;
        document.getElementById("label13").innerHTML=label13; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("tm").value;
+con(x); 
 }
 function sub13(){
     var label13=document.getElementById("label13").innerHTML;
@@ -299,13 +346,16 @@ function sub13(){
     }
      document.getElementById("label13").innerHTML=label13;
 }}
-     function add14(){
+     function add14(y){
     var label14=document.getElementById("label14").innerHTML;
     if(label14=='ADD'){
         label14=0;
     }
     label14++;
        document.getElementById("label14").innerHTML=label14; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("cmh").value;
+con(x); 
 }
 function sub14(){
     var label14=document.getElementById("label14").innerHTML;
@@ -316,13 +366,16 @@ function sub14(){
     }
      document.getElementById("label14").innerHTML=label14;
 }}   
- function add15(){
+ function add15(y){
     var label15=document.getElementById("label15").innerHTML;
     if(label15=='ADD'){
         label15=0;
     }
     label15++;
        document.getElementById("label15").innerHTML=label15; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("cmo").value;
+con(x); 
 }
 function sub15(){
     var label15=document.getElementById("label15").innerHTML;
@@ -333,13 +386,16 @@ function sub15(){
     }
      document.getElementById("label15").innerHTML=label15;
 }}
-     function add16(){
+     function add16(y){
     var label16=document.getElementById("label16").innerHTML;
     if(label16=='ADD'){
         label16=0;
     }
     label16++;
        document.getElementById("label16").innerHTML=label16; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("vmo").value;
+con(x); 
 }
 function sub16(){
     var label16=document.getElementById("label16").innerHTML;
@@ -350,13 +406,16 @@ function sub16(){
     }
      document.getElementById("label16").innerHTML=label16;
 }} 
-         function add17(){
+         function add17(y){
     var label17=document.getElementById("label17").innerHTML;
     if(label17=='ADD'){
         label17=0;
     }
     label17++;
        document.getElementById("label17").innerHTML=label17; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("sn").value;
+con(x); 
 }
 function sub17(){
     var label17=document.getElementById("label17").innerHTML;
@@ -367,13 +426,16 @@ function sub17(){
     }
      document.getElementById("label17").innerHTML=label17;
 }}
-         function add18(){
+         function add18(y){
     var label18=document.getElementById("label18").innerHTML;
     if(label18=='ADD'){
         label18=0;
     }
     label18++;
        document.getElementById("label18").innerHTML=label18; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("vnd").value;
+con(x); 
 }
 function sub18(){
     var label18=document.getElementById("label18").innerHTML;
@@ -384,13 +446,16 @@ function sub18(){
     }
      document.getElementById("label18").innerHTML=label18;
 }}
-         function add19(){
+         function add19(y){
     var label19=document.getElementById("label19").innerHTML;
     if(label19=='ADD'){
         label19=0;
     }
     label19++;
        document.getElementById("label19").innerHTML=label19; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("dm").value;
+con(x); 
 }
 function sub19(){
     var label19=document.getElementById("label19").innerHTML;
@@ -401,13 +466,16 @@ function sub19(){
     }
      document.getElementById("label19").innerHTML=label19;
 }}
-         function add20(){
+         function add20(y){
     var label20=document.getElementById("label20").innerHTML;
     if(label20=='ADD'){
         label20=0;
     }
     label20++;
        document.getElementById("label20").innerHTML=label20; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("gm").value;
+con(x); 
 }
 function sub20(){
     var label20=document.getElementById("label20").innerHTML;
@@ -418,13 +486,16 @@ function sub20(){
     }
      document.getElementById("label20").innerHTML=label20;
 }}
-         function add21(){
+         function add21(y){
     var label21=document.getElementById("label21").innerHTML;
     if(label21=='ADD'){
         label21=0;
     }
     label21++;
        document.getElementById("label21").innerHTML=label21; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("vmj").value;
+con(x); 
 }
 function sub21(){
     var label21=document.getElementById("label21").innerHTML;
@@ -435,13 +506,16 @@ function sub21(){
     }
      document.getElementById("label21").innerHTML=label21;
 }}
-          function add22(){
+          function add22(y){
     var label22=document.getElementById("label22").innerHTML;
     if(label22=='ADD'){
         label22=0;
     }
     label22++;
        document.getElementById("label22").innerHTML=label22; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("cbs").value;
+con(x); 
 }
 function sub22(){
     var label22=document.getElementById("label22").innerHTML;
@@ -452,13 +526,16 @@ function sub22(){
     }
      document.getElementById("label22").innerHTML=label22;
 }}
-          function add23(){
+          function add23(y){
     var label23=document.getElementById("label23").innerHTML;
     if(label23=='ADD'){
         label23=0;
     }
     label23++;
        document.getElementById("label23").innerHTML=label23; 
+price=parseInt(price)+parseInt(y);
+var x=document.getElementById("fbr").value;
+con(x); 
 }
 function sub23(){
     var label23=document.getElementById("label23").innerHTML;
@@ -469,16 +546,6 @@ function sub23(){
     }
      document.getElementById("label23").innerHTML=label23;
 }}
-/*function myfunction(){
-    alert("welcome");
-    val = document.getElementById("demo").innerHTML;
-    alert("hello "+val+"");
-    location.replace("cart.html");
-}
-function getdata(){
-        alert("hello "+val+"");
-        document.getElementById("ans").innerHTML=val;
-        
-}*/
+
   
 
