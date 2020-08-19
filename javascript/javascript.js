@@ -8,5 +8,7 @@ function myFunction() {
     location.replace("../Restaurant html/restaurant.html");
     }
    function getdata() {
-      document.getElementById("naam").innerHTML=name;
+       if(name=="")
+       name="Food Lover";
+   document.getElementById("naam").innerHTML=`Welcome  &nbsp${name}  `;
     }
