@@ -43,96 +43,112 @@ font-size: 17px;
 img{
 border:1px solid black;
 box-shadow: 5px 6px gray;    
-}       
+}   
+#lin{
+    width:735px;
+    height:1px;
+    background-color:rgb(128, 128, 128,0.4);
+}
+ 
 </style>
 </head>
-<body>
+<body>   
 <a name="SPECIAL"></a>
 <h2>SPECIAL'S</h2>
-<!--button onclick="myfunction()" id="demo">0</button-->
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/085/2d92a5b2eb819fd1b31bc6efe905f085.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>PIZZA SPECIAL<br><ul type="square"><li>300/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub1()"><label class="b">-</label></button> <button ><label id="label1">ADD</label></button> <button onclick="add1()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub1()"><label class="b">-</label></button> <button ><label id="label1">ADD</label></button> <button id="ps" value="PIZZA%20SPECIAL%20300" onclick="add1(300)"><label class="b"> +</label></button></td>
     </tr>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/818/1a6dfee94b54c82519f0c8cdd5452818.png?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>BURGER  SPECIAL<br><ul type="square"><li>130/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub2()"><label class="b">-</label></button> <button ><label id="label2">ADD</label></button> <button onclick="add2()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub2()"><label class="b">-</label></button> <button ><label id="label2">ADD</label></button> <button id="bs" value="BURGER%20SPECIAL%20130" onclick="add2(130)"><label class="b"> +</label></button></td>
 </tr>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/7c4/ce6520d647ee8172948df7c0140c97c4.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>FUSION PASTA<br><ul type="square"><li>180/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub3()"><label class="b">-</label></button> <button ><label id="label3">ADD</label></button> <button onclick="add3()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub3()"><label class="b">-</label></button> <button ><label id="label3">ADD</label></button> <button id="cp" value="FUSION%20PASTA%20180" onclick="add3(180)"><label class="b"> +</label></button></td>
 </tr>
 </table>
 <a name="PIZZA"></a>
 <h2>PIZZA'S</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/085/2d92a5b2eb819fd1b31bc6efe905f085.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>FARMHOUSE PIZZA<br><ul type="square"><li>150/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub4()"><label class="b">-</label></button> <button ><label id="label4">ADD</label></button> <button onclick="add4()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub4()"><label class="b">-</label></button> <button ><label id="label4">ADD</label></button> <button id="fp" value="FARMHOUSE%20PIZZA%20150" onclick="add4(150)"><label class="b"> +</label></button></td>
 </tr>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/d44/43825a33493d18fe5ac0b836de3ead44.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>VEG-LOADED<br><ul type="square"><li>125/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub5()"><label class="b">-</label></button> <button ><label id="label5">ADD</label></button> <button onclick="add5()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub5()"><label class="b">-</label></button> <button ><label id="label5">ADD</label></button> <button id="vl" value="VEG%20LOADED%20125" onclick="add5(125)"><label class="b"> +</label></button></td>
 </tr>
 </table>
 <a name="BURGERS"></a>
 <h2>BURGERS</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/c2a/0712b3f06a6af21107f35bdc573c9c2a.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>ALOO TIKKI BURGER<br><ul type="square"><li>50/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub6()"><label class="b">-</label></button> <button ><label id="label6">ADD</label></button> <button onclick="add6()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub6()"><label class="b">-</label></button> <button ><label id="label6">ADD</label></button> <button id="atb" value="ALOO%20TIKKI%20BURGER%2050" onclick="add6(50)"><label class="b"> +</label></button></td>
 </tr>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/2d0/e23ae1af035b64911282c92a712532d0.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>MAHARAJA MAC<br><ul type="square"><li>110/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-   <td><br><button onclick="sub7()"><label class="b">-</label></button> <button ><label id="label7">ADD</label></button> <button onclick="add7()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub7()"><label class="b">-</label></button> <button ><label id="label7">ADD</label></button> <button id="mm" value="MAHARAJA%20MAC%20110" onclick="add7(110)"><label class="b"> +</label></button></td>
 </tr>
 </table>
 <a name="PASTA"></a>
 <h2>PASTA</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/7c4/ce6520d647ee8172948df7c0140c97c4.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>RED SAUCE PASTA<br><ul type="square"><li>120/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub8()"><label class="b">-</label></button> <button ><label id="label8">ADD</label></button> <button onclick="add8()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub8()"><label class="b">-</label></button> <button ><label id="label8">ADD</label></button> <button id="rsp" value="RED%20SAUCE%20PASTA%20120" onclick="add8(120)"><label class="b"> +</label></button></td>
 </tr>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/83f/e52e954a39b6158f76a024543537983f.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>WHITE SAUCE PASTA<br><ul type="square"><li>120/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-    <td><br><button onclick="sub9()"><label class="b">-</label></button> <button ><label id="label9">ADD</label></button> <button onclick="add9()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub9()"><label class="b">-</label></button> <button ><label id="label9">ADD</label></button> <button id="wsp" value="WHITE%20SAUCE%20PASTA%20120" onclick="add9(120)"><label class="b"> +</label></button></td>
 </tr>
 </table>
 <a name="SHAKES"></a>
 <h2>SHAKES</h2>
+<div id="lin"></div>
 <table>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/bfd/351115b55050c26c23703b78086e8bfd.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>OREO SHAKE<br><ul type="square"><li>100/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-  <td><br><button onclick="sub10()"><label class="b">-</label></button> <button ><label id="label10">ADD</label></button> <button onclick="add10()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub10()"><label class="b">-</label></button> <button ><label id="label10">ADD</label></button> <button id="os" value="OREO%20SHAKE%20100" onclick="add10(100)"><label class="b"> +</label></button></td>
 </tr>
 <tr>
     <td><img src="https://b.zmtcdn.com/data/dish_photos/086/a6186d63358a3c605540699d9f6c4086.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A"></td>
     <td><br>KIT KAT SHAKE<br><ul type="square"><li>100/-</li></ul></td>
     <td></td><td></td><td></td><td></td><td></td>
-   <td><br><button onclick="sub11()"><label class="b">-</label></button> <button ><label id="label11">ADD</label></button> <button onclick="add11()"><label class="b"> +</label></button></td>
+    <td><br><button onclick="sub11()"><label class="b">-</label></button> <button ><label id="label11">ADD</label></button> <button id="kks" value="KIT%20KAT%20SHAKE%20100" onclick="add11(100)"><label class="b"> +</label></button></td>
 </tr>
 </table>
+<div id="lin"></div><br>
+<form action="../get.html" method="get">
+    <input type="hidden" name="sum" id="su"/>
+    <input type="hidden" name="price" id="pr"/>
+    <input type="submit" style="margin-left:40%; font-size: 16px;" value="ORDER DETAILS"/>
+    </form>
 </body>
 </html>
